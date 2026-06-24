@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoForm</class>
+ <widget class="QWidget" name="InfoForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Інформаційна панель</string>
+  </property>
+  <widget class="QFrame" name="navFrame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>961</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <widget class="QPushButton" name="pushButtonAbout">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>15</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Про нас</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonContacts">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>15</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Контакти</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonHours">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>15</y>
+      <width>151</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Режим роботи</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>8</y>
+      <width>121</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>14</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Grand Rivali</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>75</y>
+     <width>1100</width>
+     <height>512</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="pageAbout">
+    <widget class="QTextEdit" name="aboutTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>960</width>
+       <height>486</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageContacts">
+    <widget class="QTextEdit" name="contactsTextEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>1060</width>
+       <height>470</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageHours">
+    <widget class="QTableWidget" name="hoursTableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>600</width>
+       <height>280</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="hoursNoteLabel">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>320</y>
+       <width>1060</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

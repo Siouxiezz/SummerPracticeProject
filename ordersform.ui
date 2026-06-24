@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OrdersForm</class>
+ <widget class="QWidget" name="OrdersForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>595</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Замовлення</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>95</y>
+     <width>971</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="toolTipDuration">
+    <number>-1</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="refreshPushButton">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>520</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Book Antiqua</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Оновити</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deletePushButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>520</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Book Antiqua</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Видалити</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="updateStatusPushButton">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>520</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Book Antiqua</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Змінити статус</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="detailsPushButton">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>520</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Book Antiqua</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Деталі</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>970</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QLineEdit" name="searchEdit">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>20</y>
+      <width>161</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string>Введіть інформацію...</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="serachLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Пошук</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusLabel">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>20</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Статус замовлень</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="statusFilter">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>20</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="placeholderText">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

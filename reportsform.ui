@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ReportsForm</class>
+ <widget class="QWidget" name="ReportsForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>620</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ReportsForm</string>
+  </property>
+  <widget class="QFrame" name="navFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>850</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <widget class="QPushButton" name="pushButtonRevenue">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>14</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Виручка</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonPopular">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>14</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Популярні страви</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonTablesStats">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>14</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Book Antiqua</family>
+     </font>
+    </property>
+    <property name="text">
+     <string>Статистика по столиках</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>850</width>
+     <height>550</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="pageRevenue">
+    <widget class="QPushButton" name="btnToday">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Сьогодні</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnWeek">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Тиждень</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnMonth">
+     <property name="geometry">
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Місяць</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnYear">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>10</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Рік</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblPeriodInfo">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>500</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+       <pointsize>11</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Період: -</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblTotalRevenue">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>80</y>
+       <width>400</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lblOrdersCount">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>105</y>
+       <width>400</width>
+       <height>25</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableRevenue">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>130</y>
+       <width>800</width>
+       <height>330</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnExportRevenue">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>470</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Book Antiqua</family>
+      </font>
+     </property>
+     <property name="text">
+      <string>Експорт у CSV</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pagePopular">
+    <widget class="QTableWidget" name="tablePopular">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>800</width>
+       <height>440</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnExportPopular">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>480</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Експорт у CSV</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageTablesStats">
+    <widget class="QTableWidget" name="tablesStatsTableWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>800</width>
+       <height>440</height>
+      </rect>
+     </property>
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tablesStatsRefreshPushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>480</y>
+       <width>151</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Оновити</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="tablesStatsExportPushButton">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>480</y>
+       <width>171</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Експорт у CSV</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

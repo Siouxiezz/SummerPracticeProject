@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MenuForm</class>
+ <widget class="QWidget" name="MenuForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>650</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MenuForm</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>15</number>
+   </property>
+   <property name="leftMargin">
+    <number>20</number>
+   </property>
+   <property name="topMargin">
+    <number>20</number>
+   </property>
+   <property name="rightMargin">
+    <number>20</number>
+   </property>
+   <property name="bottomMargin">
+    <number>20</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="nameLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>51</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Book Antiqua</family>
+        <pointsize>11</pointsize>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Назва</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="searchEdit">
+      <property name="geometry">
+       <rect>
+        <x>61</x>
+        <y>14</y>
+        <width>250</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>250</width>
+        <height>32</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Book Antiqua</family>
+       </font>
+      </property>
+      <property name="placeholderText">
+       <string>Пошук за назвою...</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>840</x>
+        <y>10</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Book Antiqua</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Grand Rivali</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="sortCategoryComboBox">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>14</y>
+        <width>151</width>
+        <height>32</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelCategory">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>14</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Book Antiqua</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Сортування за категорією</string>
+      </property>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="editTriggers">
+      <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+     </property>
+     <property name="alternatingRowColors">
+      <bool>true</bool>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="bottomLayout">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="labelStatus">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Готово</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="bottomSpacer">
+       <property name="orientation">
+        <enum>Qt::Orientation::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonEdit">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Змінити страву</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonDelete">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Видалити</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonAdd">
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Додати страву</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonOrder">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Замовити</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonExport">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Експорт</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonImport">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Імпорт</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCart">
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>32</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Book Antiqua</family>
+        </font>
+       </property>
+       <property name="text">
+        <string>Кошик</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

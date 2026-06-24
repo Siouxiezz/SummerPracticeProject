@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AdminForm</class>
+ <widget class="QWidget" name="AdminForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>936</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AdminForm</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="navFrame">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>60</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>60</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="navLayout">
+      <property name="spacing">
+       <number>10</number>
+      </property>
+      <property name="leftMargin">
+       <number>20</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>20</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="pushButtonUsersTab">
+        <property name="text">
+         <string>Користувачі</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButtonTablesTab">
+        <property name="text">
+         <string>Столики</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="navSpacer">
+        <property name="orientation">
+         <enum>Qt::Orientation::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QWidget" name="pageUsers">
+      <layout class="QVBoxLayout" name="usersLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="usersTopLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="labelSearchTitle">
+           <property name="text">
+            <string>Пошук:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="usersSearchEdit">
+           <property name="minimumSize">
+            <size>
+             <width>200</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="labelRoleTitle">
+           <property name="text">
+            <string>Фільтр для ролі:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="usersRoleFilter">
+           <property name="minimumSize">
+            <size>
+             <width>150</width>
+             <height>32</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="usersSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="usersEditPushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Редагувати</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="usersDeletePushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Видалити</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="usersRefreshPushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Оновити</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="usersTableWidget">
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="pageTables">
+      <layout class="QVBoxLayout" name="tablesLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="tablesTopLayout">
+         <property name="spacing">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="tablesAddPushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Додати</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="tablesEditPushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Редагувати</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="tablesDeletePushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Видалити</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="tablesRefreshPushButton">
+           <property name="minimumSize">
+            <size>
+             <width>110</width>
+             <height>32</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>Оновити</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="tablesSpacer">
+           <property name="orientation">
+            <enum>Qt::Orientation::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tablesTableWidget">
+         <property name="alternatingRowColors">
+          <bool>true</bool>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+         </property>
+         <attribute name="horizontalHeaderStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
